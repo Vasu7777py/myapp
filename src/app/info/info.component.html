@@ -1,0 +1,9 @@
+<input type="text" [size]="30" id="val" placeholder="Enter card title"><br>
+<input type="tel" id="tel" [size]="30" placeholder="Enter Phone Number" ><br>
+<button type="button" (click)="clickedME()" class="btn btn-primary">Click Me</button>
+
+<div class="container-fluid">
+    <div class="myRow row">
+        <card class="col-lg-3 col-md-4 col-sm-6 myCards" *ngFor="let info of cardInfo"  [title]="info.title" [phoneNumber]="info.phoneNumber"></card>
+    </div>
+</div>
